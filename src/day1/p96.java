@@ -1,0 +1,34 @@
+package day1;
+class p96 
+{
+	public static void main(String[] args) 
+	{
+
+			String str1 ="Race";
+			String str2 ="Care";
+			str1 = str1.toLowerCase();
+			str2 = str2.toLowerCase();
+
+			int count =0;
+
+			if(str1.length()==str2.length()){
+				for(int i=0; i<str1.length(); i++){
+					for(int j=0; j<str2.length(); j++){
+						if(str1.charAt(i)==str2.charAt(j)){
+							count++;
+						}
+					}
+				}
+
+				if(count==str1.length()){
+					System.out.println("It is a anagram");
+				}
+			} else{
+				System.out.println("Not a Anagram");	
+			}
+
+	}
+}
+
+
+`
